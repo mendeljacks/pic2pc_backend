@@ -2,14 +2,19 @@
   "name": "pic2pc_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
+    "dev": "nodemon --signal SIGKILL --exec sucrase-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "sqlstring": "^2.3.2",
+    "sucrase": "^3.20.1",
     "ws": "^7.5.0"
   }
 }
